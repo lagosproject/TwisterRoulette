@@ -1,0 +1,82 @@
+# ==========================================
+# Gradle & Android Build Artifacts
+# ==========================================
+.gradle/
+build/
+app/build/
+*/build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+.navigation/
+
+# ==========================================
+# Signing Material & Secrets (CRITICAL SECURITY)
+# ==========================================
+keystore.properties
+*.jks
+*.keystore
+*.pem
+*.p12
+*.p8
+*.pkcs12
+*.key
+google-services.json
+*google-services.json
+play-service-account-key.json
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+local.env
+
+# ==========================================
+# IDE / Android Studio / IntelliJ IDEA
+# ==========================================
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries/
+.idea/caches/
+.idea/modules.xml
+.idea/runConfigurations.xml
+.idea/kotlinc.xml
+.idea/jarRepositories.xml
+.idea/deploymentTargetSelector.xml
+.idea/deploymentTargetDropDown.xml
+.idea/shelf/
+.idea/copilot/
+.idea/inspectionProfiles/
+
+# ==========================================
+# OS / System Specific
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Text Editors & Other IDEs
+# ==========================================
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Command-line tools / Logs
+*.log
+*.sqlite
+crashlytics-build.properties

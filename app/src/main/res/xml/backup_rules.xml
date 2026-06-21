@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Auto Backup rules for Android 11 (API 30) and below.
+  Only the DataStore-backed app settings are eligible for backup.
+-->
+<full-backup-content>
+    <include domain="file" path="datastore/" />
+</full-backup-content>

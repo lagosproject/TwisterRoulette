@@ -1,0 +1,126 @@
+TWISTER ROULETTE — APP DESIGN BRIEF
+===================================
+
+WHAT IT IS
+----------
+A native Android app that replaces the physical Twister spinner. It randomly
+picks a BODY PART + a COLOR, shows it on a big card, and announces it out loud.
+Works fully offline. Dark-first, neon aesthetic. Built in Jetpack Compose
+(Material 3).
+
+Target: phones, Android 8+ (API 26), portrait. Single-hand use during an active
+party game — players glance at it from across a room, so the result must be
+readable at distance.
+
+
+SCREENS (2 total)
+-----------------
+
+1. MAIN SCREEN (the game)
+Top-to-bottom layout:
+
+  1. Top app bar
+     - Title: app name (large, heavy weight).
+     - Right side: a LANGUAGE SWITCHER = 3 flag chips in a pill
+       (UK / Spain / France); the active one is highlighted with a ring/tint.
+       Then a SETTINGS gear icon.
+  2. Result Card (the dominant element, ~280dp tall, big rounded corners,
+     drop shadow)
+     - Idle state: app name + subtitle "Press Spin to Start".
+     - Result state: a circular emoji badge (hand / foot, mirrored horizontally
+       for "left"), the BODY PART in huge bold uppercase, and the COLOR name in
+       a pill below.
+     - The whole card background = the drawn color. Text auto-switches to black
+       on light colors (yellow/green/orange), white on dark.
+     - Animates on each spin: fade + scale-in, color cross-fades (~500ms).
+  3. Play-mode selector — a 3-segment toggle: MANUAL / TIMER / VOICE.
+  4. Dynamic control area (changes with selected mode — see Features).
+  5. Floating action button (FAB) — the SPIN button (circular, neon, refresh
+     icon), bottom-right.
+
+2. SETTINGS SCREEN
+A scrollable list of grouped controls. Back arrow in top bar. Sections:
+  - Language (English / Espanol / Francais) — drives both UI and the spoken
+    announcement, independent of the phone's system language.
+  - Color Set (Classic / Extended / Dark Edition / Custom).
+  - Individual Colors — toggle each color on/off (min 2 must stay active; show a
+    validation message if they try to go below 2).
+  - Timer Interval (5s-60s).
+  - Trigger Word (text field; default "Twister").
+  - TTS Speed (Slow / Normal / Fast).
+  - TTS Pitch (Low / Normal / High).
+  - Sound Effects (on/off toggle).
+  - Theme (Dark / Light / System).
+
+
+FEATURES (all need design states)
+----------------------------------
+
+3 PLAY MODES
+  - Manual: hint text "Tap the floating button to spin!". User taps FAB -> spin.
+  - Timer: a circular countdown ring (160dp) with seconds remaining in the
+    center, plus Stop / Play-Pause buttons. Auto-spins each interval. A warning
+    beep fires in the final second.
+  - Voice: a large mic button with an animated pulse ring while listening. App
+    continuously listens for the trigger word and spins when it hears it. States
+    to design: idle ("Tap Microphone to listen"), listening (pulsing), trigger
+    detected, unsupported device, error. Requires mic permission -> design the
+    permission rationale dialog ("Microphone Required").
+
+AUDIO
+  - Spoken announcement of each result (TTS) in the selected language.
+  - Beep sound effects on spin and timer warning (toggleable).
+
+COLOR SYSTEM
+7 colors with fixed hex values — USE THESE EXACTLY:
+  - Red    #FF2E2E
+  - Blue   #2E8BFF
+  - Yellow #FFD02E
+  - Green  #2EFF5C
+  - Purple #B42EFF
+  - Orange #FF7E2E
+  - Black  #1E1E1E
+
+Color sets:
+  - Classic      = Red, Blue, Yellow, Green
+  - Extended     = + Purple, Orange
+  - Dark Edition = + Black
+  - Custom       = user-chosen subset
+
+Body parts (4): Left Hand, Right Hand, Left Foot, Right Foot.
+
+
+VISUAL DIRECTION (current intent — improve on it)
+-------------------------------------------------
+  - Dark-first, premium, "electric violet / neon blue" palette. Theme accents: a
+    deep violet (primary) and a neon/cyan blue (secondary), on near-black
+    backgrounds with charcoal "glass" surfaces. High-contrast white text.
+  - Light theme also supported.
+  - Heavy/black font weights for headlines; rounded shapes; soft shadows; subtle
+    micro-animations (pulse, scale, color transitions).
+
+
+CONCRETE DESIGN DELIVERABLES NEEDED
+-----------------------------------
+  1. App icon — currently a system placeholder; needs a real adaptive icon
+     (foreground + background) in the violet/neon-blue palette. THIS IS THE TOP GAP.
+  2. Full Main Screen in all 3 mode states (Manual / Timer-running +
+     Timer-paused / Voice idle + listening).
+  3. Result Card in: idle, and result for each color (verify text contrast on
+     every one).
+  4. Settings Screen with all 9 sections and their controls.
+  5. Permission rationale dialog.
+  6. Color-set / individual-color picker UI, including the "min 2 colors"
+     validation state.
+  7. Refined dark + light color schemes and a type scale.
+  8. All three languages render without truncation — French strings are the
+     longest; design for the longest label (e.g. the "Timer" segment shows
+     "Temporizador" in Spanish and currently wraps to two lines — fix the
+     segmented control sizing).
+
+
+KNOWN UI ISSUE TO FIX IN DESIGN
+-------------------------------
+In the current build the mode-selector middle segment wraps ("Temporizado r" on
+two lines). Size the segmented control / shorten labels so all three fit on one
+line in every language.

@@ -1,0 +1,4 @@
+# Ignore generated screenshots and final assets
+raw/
+output/
+*.png

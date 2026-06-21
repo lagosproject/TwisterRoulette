@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Twister Roulette</string>
+    <string name="settings">Paramètres</string>
+    
+    <!-- Body Parts -->
+    <string name="body_part_left_hand">Main gauche</string>
+    <string name="body_part_right_hand">Main droite</string>
+    <string name="body_part_left_foot">Pied gauche</string>
+    <string name="body_part_right_foot">Pied droit</string>
+    
+    <!-- Colors -->
+    <string name="color_red">Rouge</string>
+    <string name="color_blue">Bleu</string>
+    <string name="color_yellow">Jaune</string>
+    <string name="color_green">Vert</string>
+    <string name="color_purple">Violet</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_black">Noir</string>
+
+    <!-- Play Modes -->
+    <string name="mode_timer">Minuteur</string>
+    <string name="mode_voice">Voix</string>
+    <string name="mode_manual">Manuel</string>
+    
+    <!-- Controls -->
+    <string name="control_start">Démarrer</string>
+    <string name="control_pause">Pause</string>
+    <string name="control_stop">Arrêter</string>
+    <string name="control_spin">Tourner</string>
+    
+    <!-- Settings Screen Labels -->
+    <string name="settings_language">Langue</string>
+    <string name="settings_color_set">Jeu de Couleurs</string>
+    <string name="settings_color_selection">Couleurs Individuelles</string>
+    <string name="settings_timer_interval">Intervalle</string>
+    <string name="settings_trigger_word">Mot de déclenchement</string>
+    <string name="settings_tts_speed">Vitesse de synthèse</string>
+    <string name="settings_tts_pitch">Hauteur de voix</string>
+    <string name="settings_sound_effects">Effets Sonores</string>
+    <string name="settings_theme">Thème</string>
+    
+    <!-- Language Values -->
+    <string name="lang_en">English</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    
+    <!-- Theme Values -->
+    <string name="theme_dark">Sombre</string>
+    <string name="theme_light">Clair</string>
+    <string name="theme_system">Système par défaut</string>
+    
+    <!-- TTS Speed / Pitch Values -->
+    <string name="val_slow">Lent</string>
+    <string name="val_normal">Normal</string>
+    <string name="val_fast">Rapide</string>
+    <string name="val_low">Bas</string>
+    <string name="val_high">Haut</string>
+
+    <!-- Color Set Names -->
+    <string name="color_set_classic">Classique</string>
+    <string name="color_set_extended">Étendu</string>
+    <string name="color_set_dark">Édition Sombre</string>
+    <string name="color_set_custom">Personnalisé</string>
+    
+    <!-- Warnings / Dialogs -->
+    <string name="permission_rationale_title">Microphone requis</string>
+    <string name="permission_rationale_desc">Le mode voix a besoin du microphone pour détecter le mot clé. Veuillez accorder l\'accès.</string>
+    <string name="permission_settings_action">Ouvrir les Paramètres</string>
+    <string name="permission_cancel">Annuler</string>
+    <string name="voice_listening">À l\'écoute de \"%1$s\"…</string>
+    <string name="voice_unsupported">La reconnaissance vocale n\'est pas disponible sur cet appareil.</string>
+    <string name="tts_unsupported">Le moteur TTS n\'est pas prêt sur cet appareil.</string>
+    <string name="download_tts">Installer le moteur TTS</string>
+    <string name="validation_min_colors">Au moins 2 couleurs doivent être actives !</string>
+    <string name="seconds_unit">%1$ds</string>
+    <string name="tts_announcement_template">%1$s, %2$s</string>
+
+    <!-- Main Screen -->
+    <string name="main_manual_hint">Appuyez sur le bouton flottant pour tourner !</string>
+    <string name="main_idle_subtitle">Appuyez sur Tourner pour commencer</string>
+    <string name="timer_seconds_label">secondes</string>
+
+    <!-- Voice Mode -->
+    <string name="voice_trigger_detected">Mot détecté !</string>
+    <string name="voice_error">Erreur d\'initialisation de la reconnaissance vocale</string>
+    <string name="voice_idle_hint">Appuyez sur le micro pour écouter</string>
+
+    <!-- Content Descriptions (accessibility) -->
+    <string name="cd_microphone">Microphone</string>
+    <string name="cd_back">Retour</string>
+
+    <!-- Movement History -->
+    <string name="recent_moves">Mouvements récents</string>
+    <string name="turn_number">Tour n°%1$d</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_play">Jouer</string>
+    <string name="nav_modes">Modes</string>
+
+    <!-- Game Modes -->
+    <string name="modes_title">Modes de jeu</string>
+    <string name="mode_classic_name">Classique</string>
+    <string name="mode_classic_desc">Une couleur aléatoire à chaque tour — le jeu standard.</string>
+    <string name="mode_one_color_name">Une couleur</string>
+    <string name="mode_one_color_desc">Toujours la même couleur. Idéal jusqu\'à 2 joueurs.</string>
+    <string name="mode_reducing_name">Réducteur</string>
+    <string name="mode_reducing_desc">Retire une couleur à chaque tour jusqu\'à 2. Ça devient tendu.</string>
+    <string name="mode_classic_info">Utilise votre jeu de couleurs global des Paramètres.</string>
+    <string name="mode_one_color_setting">Couleur fixe</string>
+    <string name="mode_reducing_loop">Réinitialiser la palette au minimum atteint</string>
+    <string name="mode_reducing_turns">Tours entre les pertes de couleur</string>
+    <string name="mode_reducing_min_colors">Minimum de couleurs restantes</string>
+
+    <!-- Game Modes (extended) -->
+    <string name="mode_challenge_name">Défi</string>
+    <string name="mode_challenge_desc">Mouvements normaux avec des défis surprise.</string>
+    <string name="mode_sequence_name">Séquence</string>
+    <string name="mode_sequence_desc">Plusieurs mouvements à faire dans l\'ordre.</string>
+    <string name="mode_challenge_info">Environ 1 tour sur 3 est un défi surprise.</string>
+    <string name="mode_sequence_length">Mouvements par tour</string>
+    <string name="challenge_label">Défi</string>
+    <string name="verb_lift">Lève</string>
+    <string name="tts_lift_template">Lève %1$s du %2$s</string>
+    <string name="mode_color_dropped">%1$s éliminé !</string>
+    <string name="challenge_hold">Tiens la pose 10 secondes !</string>
+    <string name="challenge_eyes">Ferme les yeux jusqu\'au prochain mouvement !</string>
+    <string name="challenge_swap">Échange de place avec un autre joueur !</string>
+    <string name="challenge_freeze">Fige-toi 5 secondes !</string>
+    <string name="challenge_one_hand">Lève une main du tapis !</string>
+</resources>

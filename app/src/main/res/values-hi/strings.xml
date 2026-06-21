@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ट्विस्टर रूलेट</string>
+    <string name="settings">सेटिंग्स</string>
+    
+    <!-- Body Parts -->
+    <string name="body_part_left_hand">बायाँ हाथ</string>
+    <string name="body_part_right_hand">दायाँ हाथ</string>
+    <string name="body_part_left_foot">बायाँ पैर</string>
+    <string name="body_part_right_foot">दायाँ पैर</string>
+    
+    <!-- Colors -->
+    <string name="color_red">लाल</string>
+    <string name="color_blue">नीला</string>
+    <string name="color_yellow">पीला</string>
+    <string name="color_green">हरा</string>
+    <string name="color_purple">बैंगनी</string>
+    <string name="color_orange">नारंगी</string>
+    <string name="color_black">काला</string>
+
+    <!-- Play Modes -->
+    <string name="mode_timer">टाइमर</string>
+    <string name="mode_voice">आवाज़</string>
+    <string name="mode_manual">मैनुअल</string>
+    
+    <!-- Controls -->
+    <string name="control_start">शुरू करें</string>
+    <string name="control_pause">रोकें</string>
+    <string name="control_stop">बंद करें</string>
+    <string name="control_spin">घुमाएं</string>
+    
+    <!-- Settings Screen Labels -->
+    <string name="settings_language">भाषा</string>
+    <string name="settings_color_set">रंग सेट</string>
+    <string name="settings_color_selection">व्यक्तिगत रंग</string>
+    <string name="settings_timer_interval">टाइमर अंतराल</string>
+    <string name="settings_trigger_word">ट्रिगर शब्द</string>
+    <string name="settings_tts_speed">टीटीएस गति</string>
+    <string name="settings_tts_pitch">टीटीएस पिच</string>
+    <string name="settings_sound_effects">ध्वनि प्रभाव</string>
+    <string name="settings_theme">थीम</string>
+    
+    <!-- Language Values -->
+    <string name="lang_en">English</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    
+    <!-- Theme Values -->
+    <string name="theme_dark">डार्क</string>
+    <string name="theme_light">लाइट</string>
+    <string name="theme_system">सिस्टम डिफ़ॉल्ट</string>
+    
+    <!-- TTS Speed / Pitch Values -->
+    <string name="val_slow">धीमा</string>
+    <string name="val_normal">सामान्य</string>
+    <string name="val_fast">तेज़</string>
+    <string name="val_low">कम</string>
+    <string name="val_high">उच्च</string>
+
+    <!-- Color Set Names -->
+    <string name="color_set_classic">क्लासिक</string>
+    <string name="color_set_extended">विस्तृत</string>
+    <string name="color_set_dark">डार्क एडिशन</string>
+    <string name="color_set_custom">कस्टम</string>
+    
+    <!-- Warnings / Dialogs -->
+    <string name="permission_rationale_title">माइक्रोफ़ोन आवश्यक</string>
+    <string name="permission_rationale_desc">ट्रिगर शब्द का पता लगाने के लिए वॉयस मोड को माइक्रोफ़ोन की आवश्यकता होती है। कृपया माइक्रोफ़ोन की अनुमति दें।</string>
+    <string name="permission_settings_action">सेटिंग्स खोलें</string>
+    <string name="permission_cancel">रद्द करें</string>
+    <string name="voice_listening">\"%1$s\" के लिए सुन रहा है…</string>
+    <string name="voice_unsupported">इस डिवाइस पर आवाज़ पहचानना अनुपलब्ध है।</string>
+    <string name="tts_unsupported">इस डिवाइस पर टीटीएस इंजन तैयार नहीं है।</string>
+    <string name="download_tts">टीटीएस इंजन स्थापित करें</string>
+    <string name="validation_min_colors">कम से कम 2 रंग सक्रिय होने चाहिए!</string>
+    <string name="seconds_unit">%1$d सेकंड</string>
+    <string name="tts_announcement_template">%1$s, %2$s</string>
+
+    <!-- Main Screen -->
+    <string name="main_manual_hint">घुमाने के लिए फ्लोटिंग बटन पर टैप करें!</string>
+    <string name="main_idle_subtitle">शुरू करने के लिए स्पिन दबाएं</string>
+    <string name="timer_seconds_label">सेकंड</string>
+
+    <!-- Voice Mode -->
+    <string name="voice_trigger_detected">ट्रिगर का पता चला!</string>
+    <string name="voice_error">आवाज़ पहचानकर्ता शुरू करने में त्रुटि</string>
+    <string name="voice_idle_hint">सुनने के लिए माइक्रोफ़ोन पर टैप करें</string>
+
+    <!-- Content Descriptions (accessibility) -->
+    <string name="cd_microphone">माइक्रोफ़ोन</string>
+    <string name="cd_back">वापस</string>
+
+    <!-- Movement History -->
+    <string name="recent_moves">हाल के कदम</string>
+    <string name="turn_number">बारी #%1$d</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_play">खेलें</string>
+    <string name="nav_modes">मोड</string>
+
+    <!-- Game Modes -->
+    <string name="modes_title">गेम मोड</string>
+    <string name="mode_classic_name">क्लासिक</string>
+    <string name="mode_classic_desc">हर बार एक यादृच्छिक रंग — मानक खेल।</string>
+    <string name="mode_one_color_name">एक रंग</string>
+    <string name="mode_one_color_desc">हमेशा एक ही रंग। अधिकतम 2 खिलाड़ियों के लिए सर्वोत्तम।</string>
+    <string name="mode_reducing_name">रिड्यूसिंग</string>
+    <string name="mode_reducing_desc">हर बार एक रंग हटाता है जब तक 2 न बच जाएं — यह तनावपूर्ण हो जाता है।</string>
+    <string name="mode_classic_info">सेटिंग्स से आपके वैश्विक रंग सेट का उपयोग करता है।</string>
+    <string name="mode_one_color_setting">निश्चित रंग</string>
+    <string name="mode_reducing_loop">न्यूनतम स्तर पर पहुँचने पर पैलेट को पुनरारंभ करें</string>
+    <string name="mode_reducing_turns">रंग हटने के बीच की बारी</string>
+    <string name="mode_reducing_min_colors">न्यूनतम बचे रंग</string>
+
+    <!-- Game Modes (extended) -->
+    <string name="mode_challenge_name">चुनौती</string>
+    <string name="mode_challenge_desc">आश्चर्यजनक चुनौतियों के साथ सामान्य कदम।</string>
+    <string name="mode_sequence_name">अनुक्रम</string>
+    <string name="mode_sequence_desc">क्रम में करने के लिए घोषित किए गए कई कदम।</string>
+    <string name="mode_challenge_info">लगभग 3 में से 1 बारी एक आश्चर्यजनक चुनौती होती है।</string>
+    <string name="mode_sequence_length">प्रति बारी कदम</string>
+    <string name="challenge_label">चुनौती</string>
+    <string name="verb_lift">उठाएं</string>
+    <string name="tts_lift_template">%2$s से %1$s उठाएं</string>
+    <string name="mode_color_dropped">%1$s बाहर है!</string>
+    <string name="challenge_hold">10 सेकंड के लिए उस मुद्रा में रहें!</string>
+    <string name="challenge_eyes">अगली बारी तक अपनी आँखें बंद रखें!</string>
+    <string name="challenge_swap">दूसरे खिलाड़ी के साथ जगह बदलें!</string>
+    <string name="challenge_freeze">5 सेकंड के लिए फ्रीज हो जाएं!</string>
+    <string name="challenge_one_hand">चटाई से एक हाथ उठाएं!</string>
+</resources>

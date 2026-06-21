@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Twister Roulette</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Body Parts -->
+    <string name="body_part_left_hand">Left Hand</string>
+    <string name="body_part_right_hand">Right Hand</string>
+    <string name="body_part_left_foot">Left Foot</string>
+    <string name="body_part_right_foot">Right Foot</string>
+    
+    <!-- Colors -->
+    <string name="color_red">Red</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_green">Green</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_black">Black</string>
+
+    <!-- Play Modes -->
+    <string name="mode_timer">Timer</string>
+    <string name="mode_voice">Voice</string>
+    <string name="mode_manual">Manual</string>
+    
+    <!-- Controls -->
+    <string name="control_start">Start</string>
+    <string name="control_pause">Pause</string>
+    <string name="control_stop">Stop</string>
+    <string name="control_spin">Spin</string>
+    
+    <!-- Settings Screen Labels -->
+    <string name="settings_language">Language</string>
+    <string name="settings_color_set">Color Set</string>
+    <string name="settings_color_selection">Individual Colors</string>
+    <string name="settings_timer_interval">Timer Interval</string>
+    <string name="settings_trigger_word">Trigger Word</string>
+    <string name="settings_tts_speed">TTS Speed</string>
+    <string name="settings_tts_pitch">TTS Pitch</string>
+    <string name="settings_sound_effects">Sound Effects</string>
+    <string name="settings_theme">Theme</string>
+    
+    <!-- Language Values -->
+    <string name="lang_en">English</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    
+    <!-- Theme Values -->
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_system">System</string>
+    
+    <!-- TTS Speed / Pitch Values -->
+    <string name="val_slow">Slow</string>
+    <string name="val_normal">Normal</string>
+    <string name="val_fast">Fast</string>
+    <string name="val_low">Low</string>
+    <string name="val_high">High</string>
+
+    <!-- Color Set Names -->
+    <string name="color_set_classic">Classic</string>
+    <string name="color_set_extended">Extended</string>
+    <string name="color_set_dark">Dark Edition</string>
+    <string name="color_set_custom">Custom</string>
+    
+    <!-- Warnings / Dialogs -->
+    <string name="permission_rationale_title">Microphone Required</string>
+    <string name="permission_rationale_desc">Voice mode needs the microphone to detect the trigger word. Please grant microphone access.</string>
+    <string name="permission_settings_action">Open Settings</string>
+    <string name="permission_cancel">Cancel</string>
+    <string name="voice_listening">Listening for \"%1$s\"…</string>
+    <string name="voice_unsupported">Voice recognition is unavailable on this device.</string>
+    <string name="tts_unsupported">TTS engine is not ready on this device.</string>
+    <string name="download_tts">Install TTS Engine</string>
+    <string name="validation_min_colors">At least 2 colors must be active!</string>
+    <string name="seconds_unit">%1$ds</string>
+    <string name="tts_announcement_template">%1$s, %2$s</string>
+
+    <!-- Main Screen -->
+    <string name="main_manual_hint">Tap the floating button to spin!</string>
+    <string name="main_idle_subtitle">Press Spin to Start</string>
+    <string name="timer_seconds_label">seconds</string>
+
+    <!-- Voice Mode -->
+    <string name="voice_trigger_detected">Trigger detected!</string>
+    <string name="voice_error">Error initializing voice recognizer</string>
+    <string name="voice_idle_hint">Tap Microphone to listen</string>
+
+    <!-- Content Descriptions (accessibility) -->
+    <string name="cd_microphone">Microphone</string>
+    <string name="cd_back">Back</string>
+
+    <!-- Movement History -->
+    <string name="recent_moves">Recent Moves</string>
+    <string name="turn_number">Turn #%1$d</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_play">Play</string>
+    <string name="nav_modes">Modes</string>
+
+    <!-- Game Modes -->
+    <string name="modes_title">Game Modes</string>
+    <string name="mode_classic_name">Classic</string>
+    <string name="mode_classic_desc">A random color each turn — the standard game.</string>
+    <string name="mode_one_color_name">One Color</string>
+    <string name="mode_one_color_desc">Always the same color. Best for up to 2 players.</string>
+    <string name="mode_reducing_name">Reducing</string>
+    <string name="mode_reducing_desc">Drops a color each turn down to 2 — it gets tense.</string>
+    <string name="mode_classic_info">Uses your global color set from Settings.</string>
+    <string name="mode_one_color_setting">Fixed color</string>
+    <string name="mode_reducing_loop">Restart palette when the minimum is reached</string>
+    <string name="mode_reducing_turns">Turns between color drops</string>
+    <string name="mode_reducing_min_colors">Minimum colors remaining</string>
+
+    <!-- Game Modes (extended) -->
+    <string name="mode_challenge_name">Challenge</string>
+    <string name="mode_challenge_desc">Normal moves with surprise dares mixed in.</string>
+    <string name="mode_sequence_name">Sequence</string>
+    <string name="mode_sequence_desc">Several moves announced to perform in order.</string>
+    <string name="mode_challenge_info">About 1 in 3 turns is a surprise challenge.</string>
+    <string name="mode_sequence_length">Moves per turn</string>
+    <string name="challenge_label">Challenge</string>
+    <string name="verb_lift">Lift</string>
+    <string name="tts_lift_template">Lift %1$s from %2$s</string>
+    <string name="mode_color_dropped">%1$s is out!</string>
+    <string name="challenge_hold">Hold that pose for 10 seconds!</string>
+    <string name="challenge_eyes">Close your eyes until the next move!</string>
+    <string name="challenge_swap">Swap places with another player!</string>
+    <string name="challenge_freeze">Freeze for 5 seconds!</string>
+    <string name="challenge_one_hand">Lift one hand off the mat!</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <!-- Wrap in a group scaled to 80% to fit within the adaptive icon safe zone -->
+    <group
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        android:pivotX="256"
+        android:pivotY="256">
+        
+        <!-- Top-Left Circle (Red/Pink) -->
+        <path
+            android:fillColor="#FF0091"
+            android:pathData="M166,84 a82,82 0 1,0 0,164 a82,82 0 1,0 0,-164 Z" />
+            
+        <!-- Top-Right Circle (Green) -->
+        <path
+            android:fillColor="#00C853"
+            android:pathData="M346,84 a82,82 0 1,0 0,164 a82,82 0 1,0 0,-164 Z" />
+            
+        <!-- Bottom-Left Circle (Purple/Blue) -->
+        <path
+            android:fillColor="#651FFF"
+            android:pathData="M166,264 a82,82 0 1,0 0,164 a82,82 0 1,0 0,-164 Z" />
+            
+        <!-- Bottom-Right Circle (Yellow) -->
+        <path
+            android:fillColor="#FFD600"
+            android:pathData="M346,264 a82,82 0 1,0 0,164 a82,82 0 1,0 0,-164 Z" />
+            
+        <!-- Spinner Needle (Rotated 48 degrees) -->
+        <group
+            android:rotation="48"
+            android:pivotX="256"
+            android:pivotY="256">
+            <path
+                android:fillColor="#3E5266"
+                android:pathData="M256,90 L256,306 L236,256 Z" />
+            <path
+                android:fillColor="#2C3E50"
+                android:pathData="M256,90 L276,256 L256,306 Z" />
+            <path
+                android:fillColor="#151E27"
+                android:pathData="M256,250 a6,6 0 1,0 0,12 a6,6 0 1,0 0,-12 Z" />
+        </group>
+    </group>
+</vector>
