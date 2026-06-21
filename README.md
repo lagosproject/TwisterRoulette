@@ -1,9 +1,21 @@
-# Twister Roulette Android App
+<p align="center">
+  <img src="logo.svg" alt="Twister Roulette Logo" width="128" height="128" />
+</p>
 
-[![CI Build](https://github.com/your-username/TwisterRoulette/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/TwisterRoulette/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.0.0-purple.svg)](https://kotlinlang.org/)
-[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20%28API%2026%2B%29-blue.svg)](https://developer.android.com)
+<h1 align="center">Twister Roulette Android App</h1>
+
+<p align="center">
+  <a href="https://github.com/lagosproject/TwisterRoulette/actions/workflows/ci.yml"><img src="https://github.com/lagosproject/TwisterRoulette/actions/workflows/ci.yml/badge.svg" alt="CI Build" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
+  <a href="https://kotlinlang.org/"><img src="https://img.shields.io/badge/Kotlin-2.0.0-purple.svg" alt="Kotlin" /></a>
+  <a href="https://developer.android.com"><img src="https://img.shields.io/badge/Platform-Android%208.0%2B%20%28API%2026%2B%29-blue.svg" alt="Platform" /></a>
+</p>
+
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.lakescorp.twisterroulette">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="80" />
+  </a>
+</p>
 
 Twister Roulette is a native Android application designed to replace the classic physical Twister roulette spinner. It randomly spins a body part and a color, announces the result in real-time, and operates fully offline. Built with Jetpack Compose, it features a premium, dark-first electric neon aesthetic optimized for single-handed use during active party games.
 
