@@ -101,7 +101,13 @@ class ChallengeMode(enabledColors: Set<TwisterColor>) : GameMode {
             R.string.challenge_eyes,
             R.string.challenge_swap,
             R.string.challenge_freeze,
-            R.string.challenge_one_hand
+            R.string.challenge_one_hand,
+            R.string.challenge_swap_hands,
+            R.string.challenge_swap_feet,
+            R.string.challenge_previous_player_chooses,
+            R.string.challenge_all_swap,
+            R.string.challenge_elbows_body,
+            R.string.challenge_no_bend_knees
         )
     }
 }
@@ -112,8 +118,20 @@ class SequenceMode(enabledColors: Set<TwisterColor>, private val length: Int) : 
     private val pool = colorPool(enabledColors)
     override fun nextTurn(): Turn {
         val count = length.coerceIn(2, 10)
-        val moves = (1..count).map { GameResult(randomBodyPart(), randomColor(pool)) }
+        val moves = ArrayList<GameResult>(count)
+        var lastBodyPart: BodyPart? = null
+        for (i in 0 until count) {
+            val bodyPart = randomBodyPartExcept(lastBodyPart)
+            moves.add(GameResult(bodyPart, randomColor(pool)))
+            lastBodyPart = bodyPart
+        }
         return Turn(moves = moves)
+    }
+
+    private fun randomBodyPartExcept(exclude: BodyPart?): BodyPart {
+        if (exclude == null) return randomBodyPart()
+        val candidates = BodyPart.entries.filter { it != exclude }
+        return candidates[Random.nextInt(candidates.size)]
     }
 }
 

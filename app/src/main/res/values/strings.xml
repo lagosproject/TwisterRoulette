@@ -131,4 +131,10 @@
     <string name="challenge_swap">Swap places with another player!</string>
     <string name="challenge_freeze">Freeze for 5 seconds!</string>
     <string name="challenge_one_hand">Lift one hand off the mat!</string>
+    <string name="challenge_swap_hands">Swap the positions of your hands!</string>
+    <string name="challenge_swap_feet">Swap the positions of your feet!</string>
+    <string name="challenge_previous_player_chooses">The previous player chooses your next move!</string>
+    <string name="challenge_all_swap">All players swap places at once with the next move!</string>
+    <string name="challenge_elbows_body">Keep your elbows tucked against your body!</string>
+    <string name="challenge_no_bend_knees">You cannot bend your knees on the next move!</string>
 </resources>

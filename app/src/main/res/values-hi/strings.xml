@@ -131,4 +131,10 @@
     <string name="challenge_swap">दूसरे खिलाड़ी के साथ जगह बदलें!</string>
     <string name="challenge_freeze">5 सेकंड के लिए फ्रीज हो जाएं!</string>
     <string name="challenge_one_hand">चटाई से एक हाथ उठाएं!</string>
+    <string name="challenge_swap_hands">अपने हाथों की स्थिति बदलें!</string>
+    <string name="challenge_swap_feet">अपने पैरों की स्थिति बदलें!</string>
+    <string name="challenge_previous_player_chooses">पिछला खिलाड़ी आपकी अगली बारी चुनता है!</string>
+    <string name="challenge_all_swap">सभी खिलाड़ी अगली बारी में एक साथ जगह बदलते हैं!</string>
+    <string name="challenge_elbows_body">अपनी कोहनियों को अपने शरीर से सटाकर रखें!</string>
+    <string name="challenge_no_bend_knees">आप अगली बारी में अपने घुटने नहीं मोड़ सकते!</string>
 </resources>

@@ -131,4 +131,10 @@
     <string name="challenge_swap">与另一位玩家交换位置！</string>
     <string name="challenge_freeze">定格 5 秒！</string>
     <string name="challenge_one_hand">从垫子上抬起一只手！</string>
+    <string name="challenge_swap_hands">交换双手的位置！</string>
+    <string name="challenge_swap_feet">交换双脚的位置！</string>
+    <string name="challenge_previous_player_chooses">上一位玩家选择你的下一步动作！</string>
+    <string name="challenge_all_swap">所有玩家在下一步动作时同时交换位置！</string>
+    <string name="challenge_elbows_body">保持手肘紧贴身体！</string>
+    <string name="challenge_no_bend_knees">下一步动作时你不能弯曲双膝！</string>
 </resources>

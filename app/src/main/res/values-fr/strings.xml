@@ -131,4 +131,10 @@
     <string name="challenge_swap">Échange de place avec un autre joueur !</string>
     <string name="challenge_freeze">Fige-toi 5 secondes !</string>
     <string name="challenge_one_hand">Lève une main du tapis !</string>
+    <string name="challenge_swap_hands">Échange la position de tes mains !</string>
+    <string name="challenge_swap_feet">Échange la position de tes pieds !</string>
+    <string name="challenge_previous_player_chooses">Le joueur précédent choisit ton prochain mouvement !</string>
+    <string name="challenge_all_swap">Tous les joueurs changent de place en même temps au prochain mouvement !</string>
+    <string name="challenge_elbows_body">Garde tes coudes collés au corps !</string>
+    <string name="challenge_no_bend_knees">Tu ne peux pas plier les genoux au prochain mouvement !</string>
 </resources>
