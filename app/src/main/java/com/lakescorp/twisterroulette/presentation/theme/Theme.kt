@@ -58,7 +58,6 @@ fun TwisterRouletteTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val activity = view.context as? Activity ?: return@SideEffect
-            activity.window.statusBarColor = colorScheme.background.toArgb()
             WindowCompat.getInsetsController(activity.window, view).isAppearanceLightStatusBars = !darkTheme
         }
     }
