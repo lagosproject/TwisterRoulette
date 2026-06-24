@@ -28,6 +28,12 @@ enum class AppTheme {
     DARK, LIGHT, SYSTEM
 }
 
+enum class ChallengeFrequency(val percentage: Int) {
+    FREQUENT(50),
+    INFREQUENT(30),
+    RARE(10)
+}
+
 data class AppSettings(
     val language: AppLanguage = AppLanguage.ENGLISH,
     val colorSet: ColorSet = ColorSet.CLASSIC,
@@ -43,5 +49,6 @@ data class AppSettings(
     val reducingLoop: Boolean = false,
     val reducingTurnsPerDrop: Int = 1,
     val reducingMinColors: Int = 2,
-    val sequenceLength: Int = 2
+    val sequenceLength: Int = 2,
+    val challengeFrequency: ChallengeFrequency = ChallengeFrequency.INFREQUENT
 )

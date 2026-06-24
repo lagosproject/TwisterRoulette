@@ -121,6 +121,13 @@
     <string name="mode_sequence_name">Sequência</string>
     <string name="mode_sequence_desc">Vários movimentos anunciados para realizar em ordem.</string>
     <string name="mode_challenge_info">Cerca de 1 em cada 3 rodadas é um desafio surpresa.</string>
+    <string name="settings_challenge_frequency">Frequência de desafios</string>
+    <string name="challenge_freq_frequent">Frequente</string>
+    <string name="challenge_freq_infrequent">Pouco frequente</string>
+    <string name="challenge_freq_rare">Raro</string>
+    <string name="mode_challenge_info_frequent">Cerca de 1 em cada 2 rodadas é um desafio surpresa.</string>
+    <string name="mode_challenge_info_infrequent">Cerca de 1 em cada 3 rodadas é um desafio surpresa.</string>
+    <string name="mode_challenge_info_rare">Cerca de 1 em cada 10 rodadas é um desafio surpresa.</string>
     <string name="mode_sequence_length">Movimentos por rodada</string>
     <string name="challenge_label">Desafio</string>
     <string name="verb_lift">Levantar</string>

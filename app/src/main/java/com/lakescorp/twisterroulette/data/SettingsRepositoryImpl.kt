@@ -11,6 +11,7 @@ import androidx.datastore.preferences.preferencesDataStore
 import com.lakescorp.twisterroulette.domain.model.AppLanguage
 import com.lakescorp.twisterroulette.domain.model.AppSettings
 import com.lakescorp.twisterroulette.domain.model.AppTheme
+import com.lakescorp.twisterroulette.domain.model.ChallengeFrequency
 import com.lakescorp.twisterroulette.domain.model.ColorSet
 import com.lakescorp.twisterroulette.domain.model.GameModeType
 import com.lakescorp.twisterroulette.domain.model.TtsPitch
@@ -46,6 +47,7 @@ class SettingsRepositoryImpl @Inject constructor(
         val REDUCING_TURNS_PER_DROP = intPreferencesKey("reducing_turns_per_drop")
         val REDUCING_MIN_COLORS = intPreferencesKey("reducing_min_colors")
         val SEQUENCE_LENGTH = intPreferencesKey("sequence_length")
+        val CHALLENGE_FREQUENCY = stringPreferencesKey("challenge_frequency")
     }
 
     override fun getSettings(): Flow<AppSettings> {
@@ -125,6 +127,13 @@ class SettingsRepositoryImpl @Inject constructor(
             val reducingMinColors = preferences[PreferencesKeys.REDUCING_MIN_COLORS] ?: 2
             val sequenceLength = preferences[PreferencesKeys.SEQUENCE_LENGTH] ?: 2
 
+            val challengeFrequencyStr = preferences[PreferencesKeys.CHALLENGE_FREQUENCY]
+            val challengeFrequency = try {
+                if (challengeFrequencyStr != null) ChallengeFrequency.valueOf(challengeFrequencyStr) else ChallengeFrequency.INFREQUENT
+            } catch (e: IllegalArgumentException) {
+                ChallengeFrequency.INFREQUENT
+            }
+
             AppSettings(
                 language = language,
                 colorSet = colorSet,
@@ -140,7 +149,8 @@ class SettingsRepositoryImpl @Inject constructor(
                 reducingLoop = reducingLoop,
                 reducingTurnsPerDrop = reducingTurnsPerDrop,
                 reducingMinColors = reducingMinColors,
-                sequenceLength = sequenceLength
+                sequenceLength = sequenceLength,
+                challengeFrequency = challengeFrequency
             )
         }
     }
@@ -162,6 +172,7 @@ class SettingsRepositoryImpl @Inject constructor(
             preferences[PreferencesKeys.REDUCING_TURNS_PER_DROP] = settings.reducingTurnsPerDrop
             preferences[PreferencesKeys.REDUCING_MIN_COLORS] = settings.reducingMinColors
             preferences[PreferencesKeys.SEQUENCE_LENGTH] = settings.sequenceLength
+            preferences[PreferencesKeys.CHALLENGE_FREQUENCY] = settings.challengeFrequency.name
         }
     }
 }

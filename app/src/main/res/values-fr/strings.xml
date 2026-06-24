@@ -121,6 +121,13 @@
     <string name="mode_sequence_name">Séquence</string>
     <string name="mode_sequence_desc">Plusieurs mouvements à faire dans l\'ordre.</string>
     <string name="mode_challenge_info">Environ 1 tour sur 3 est un défi surprise.</string>
+    <string name="settings_challenge_frequency">Fréquence des défis</string>
+    <string name="challenge_freq_frequent">Fréquent</string>
+    <string name="challenge_freq_infrequent">Peu fréquent</string>
+    <string name="challenge_freq_rare">Rare</string>
+    <string name="mode_challenge_info_frequent">Environ 1 tour sur 2 est un défi surprise.</string>
+    <string name="mode_challenge_info_infrequent">Environ 1 tour sur 3 est un défi surprise.</string>
+    <string name="mode_challenge_info_rare">Environ 1 tour sur 10 est un défi surprise.</string>
     <string name="mode_sequence_length">Mouvements par tour</string>
     <string name="challenge_label">Défi</string>
     <string name="verb_lift">Lève</string>

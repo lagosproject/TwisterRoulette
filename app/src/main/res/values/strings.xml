@@ -121,6 +121,13 @@
     <string name="mode_sequence_name">Sequence</string>
     <string name="mode_sequence_desc">Several moves announced to perform in order.</string>
     <string name="mode_challenge_info">About 1 in 3 turns is a surprise challenge.</string>
+    <string name="settings_challenge_frequency">Challenge Frequency</string>
+    <string name="challenge_freq_frequent">Frequent</string>
+    <string name="challenge_freq_infrequent">Infrequent</string>
+    <string name="challenge_freq_rare">Rare</string>
+    <string name="mode_challenge_info_frequent">About 1 in 2 turns is a surprise challenge.</string>
+    <string name="mode_challenge_info_infrequent">About 1 in 3 turns is a surprise challenge.</string>
+    <string name="mode_challenge_info_rare">About 1 in 10 turns is a surprise challenge.</string>
     <string name="mode_sequence_length">Moves per turn</string>
     <string name="challenge_label">Challenge</string>
     <string name="verb_lift">Lift</string>

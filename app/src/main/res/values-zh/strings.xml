@@ -121,6 +121,13 @@
     <string name="mode_sequence_name">序列</string>
     <string name="mode_sequence_desc">宣布按顺序执行的多个动作。</string>
     <string name="mode_challenge_info">大约每3轮中就有1轮是惊喜挑战。</string>
+    <string name="settings_challenge_frequency">挑战频率</string>
+    <string name="challenge_freq_frequent">频繁</string>
+    <string name="challenge_freq_infrequent">偶有</string>
+    <string name="challenge_freq_rare">罕见</string>
+    <string name="mode_challenge_info_frequent">大约每2轮中就有1轮是惊喜挑战。</string>
+    <string name="mode_challenge_info_infrequent">大约每3轮中就有1轮是惊喜挑战。</string>
+    <string name="mode_challenge_info_rare">大约每10轮中就有1轮是惊喜挑战。</string>
     <string name="mode_sequence_length">每轮动作数</string>
     <string name="challenge_label">挑战</string>
     <string name="verb_lift">抬起</string>

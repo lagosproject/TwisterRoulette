@@ -3,12 +3,14 @@ package com.lakescorp.twisterroulette.domain.gamemode
 import com.lakescorp.twisterroulette.R
 import com.lakescorp.twisterroulette.domain.model.AppSettings
 import com.lakescorp.twisterroulette.domain.model.BodyPart
+import com.lakescorp.twisterroulette.domain.model.ChallengeFrequency
 import com.lakescorp.twisterroulette.domain.model.GameModeType
 import com.lakescorp.twisterroulette.domain.model.GameResult
 import com.lakescorp.twisterroulette.domain.model.Turn
 import com.lakescorp.twisterroulette.domain.model.TurnVerb
 import com.lakescorp.twisterroulette.domain.model.TwisterColor
 import kotlin.random.Random
+
 
 /**
  * Parent abstraction for a game mode. Each implementation decides what a turn
@@ -84,18 +86,20 @@ class ReducingMode(
 
 
 /** Mostly normal moves, but occasionally a fun challenge instead of a move. */
-class ChallengeMode(enabledColors: Set<TwisterColor>) : GameMode {
+class ChallengeMode(
+    enabledColors: Set<TwisterColor>,
+    private val frequency: ChallengeFrequency
+) : GameMode {
     override val type = GameModeType.CHALLENGE
     private val pool = colorPool(enabledColors)
     override fun nextTurn(): Turn =
-        if (Random.nextInt(100) < CHALLENGE_PERCENT) {
+        if (Random.nextInt(100) < frequency.percentage) {
             Turn(challengeResId = CHALLENGES[Random.nextInt(CHALLENGES.size)])
         } else {
             Turn(moves = listOf(GameResult(randomBodyPart(), randomColor(pool))))
         }
 
     companion object {
-        private const val CHALLENGE_PERCENT = 30
         val CHALLENGES = listOf(
             R.string.challenge_hold,
             R.string.challenge_eyes,
@@ -146,7 +150,7 @@ object GameModeFactory {
             settings.reducingMinColors
         )
 
-        GameModeType.CHALLENGE -> ChallengeMode(settings.enabledColors)
+        GameModeType.CHALLENGE -> ChallengeMode(settings.enabledColors, settings.challengeFrequency)
         GameModeType.SEQUENCE -> SequenceMode(settings.enabledColors, settings.sequenceLength)
     }
 }

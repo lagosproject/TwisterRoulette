@@ -3,6 +3,7 @@ package com.lakescorp.twisterroulette.presentation.modes
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.lakescorp.twisterroulette.domain.model.AppSettings
+import com.lakescorp.twisterroulette.domain.model.ChallengeFrequency
 import com.lakescorp.twisterroulette.domain.model.GameModeType
 import com.lakescorp.twisterroulette.domain.model.TwisterColor
 import com.lakescorp.twisterroulette.domain.usecase.GetSettingsUseCase
@@ -38,6 +39,8 @@ class ModesViewModel @Inject constructor(
     fun setReducingMinColors(minColors: Int) = update { it.copy(reducingMinColors = minColors) }
 
     fun setSequenceLength(length: Int) = update { it.copy(sequenceLength = length) }
+
+    fun setChallengeFrequency(frequency: ChallengeFrequency) = update { it.copy(challengeFrequency = frequency) }
 
     private fun update(transform: (AppSettings) -> AppSettings) {
         viewModelScope.launch { saveSettingsUseCase(transform(settings.value)) }

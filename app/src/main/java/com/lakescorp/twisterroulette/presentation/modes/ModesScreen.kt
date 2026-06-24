@@ -49,9 +49,14 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.lakescorp.twisterroulette.R
 import com.lakescorp.twisterroulette.domain.model.AppSettings
+import com.lakescorp.twisterroulette.domain.model.ChallengeFrequency
 import com.lakescorp.twisterroulette.domain.model.GameModeType
 import com.lakescorp.twisterroulette.domain.model.TwisterColor
 import com.lakescorp.twisterroulette.presentation.main.gameColor
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.SegmentedButton
+import androidx.compose.material3.SegmentedButtonDefaults
+import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
@@ -184,7 +189,17 @@ private fun ModeSettings(
         }
 
         GameModeType.CHALLENGE -> {
-            ModeSettingInfo(text = stringResource(R.string.mode_challenge_info))
+            ModeSettingLabel(stringResource(R.string.settings_challenge_frequency))
+            ChallengeFrequencySelector(
+                selectedFrequency = settings.challengeFrequency,
+                onFrequencySelected = { viewModel.setChallengeFrequency(it) }
+            )
+            val infoText = when (settings.challengeFrequency) {
+                ChallengeFrequency.FREQUENT -> stringResource(R.string.mode_challenge_info_frequent)
+                ChallengeFrequency.INFREQUENT -> stringResource(R.string.mode_challenge_info_infrequent)
+                ChallengeFrequency.RARE -> stringResource(R.string.mode_challenge_info_rare)
+            }
+            ModeSettingInfo(text = infoText)
         }
         GameModeType.SEQUENCE -> {
             ModeSettingLabel(stringResource(R.string.mode_sequence_length))
@@ -373,6 +388,32 @@ private fun NumberSelector(
                 tint = if (plusEnabled) MaterialTheme.colorScheme.secondary else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.3f),
                 modifier = Modifier.size(20.dp)
             )
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun ChallengeFrequencySelector(
+    selectedFrequency: ChallengeFrequency,
+    onFrequencySelected: (ChallengeFrequency) -> Unit
+) {
+    SingleChoiceSegmentedButtonRow(
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        ChallengeFrequency.entries.forEachIndexed { index, freq ->
+            val label = when (freq) {
+                ChallengeFrequency.FREQUENT -> stringResource(R.string.challenge_freq_frequent)
+                ChallengeFrequency.INFREQUENT -> stringResource(R.string.challenge_freq_infrequent)
+                ChallengeFrequency.RARE -> stringResource(R.string.challenge_freq_rare)
+            }
+            SegmentedButton(
+                selected = selectedFrequency == freq,
+                onClick = { onFrequencySelected(freq) },
+                shape = SegmentedButtonDefaults.itemShape(index = index, count = ChallengeFrequency.entries.size)
+            ) {
+                Text(label)
+            }
         }
     }
 }

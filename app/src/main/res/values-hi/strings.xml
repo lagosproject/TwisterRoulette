@@ -121,6 +121,13 @@
     <string name="mode_sequence_name">अनुक्रम</string>
     <string name="mode_sequence_desc">क्रम में करने के लिए घोषित किए गए कई कदम।</string>
     <string name="mode_challenge_info">लगभग 3 में से 1 बारी एक आश्चर्यजनक चुनौती होती है।</string>
+    <string name="settings_challenge_frequency">चुनौती की आवृत्ति</string>
+    <string name="challenge_freq_frequent">अक्सर</string>
+    <string name="challenge_freq_infrequent">कम</string>
+    <string name="challenge_freq_rare">दुर्लभ</string>
+    <string name="mode_challenge_info_frequent">लगभग 2 में से 1 बारी एक आश्चर्यजनक चुनौती होती है।</string>
+    <string name="mode_challenge_info_infrequent">लगभग 3 में से 1 बारी एक आश्चर्यजनक चुनौती होती है।</string>
+    <string name="mode_challenge_info_rare">लगभग 10 में से 1 बारी एक आश्चर्यजनक चुनौती होती है।</string>
     <string name="mode_sequence_length">प्रति बारी कदम</string>
     <string name="challenge_label">चुनौती</string>
     <string name="verb_lift">उठाएं</string>

@@ -121,6 +121,13 @@
     <string name="mode_sequence_name">Secuencia</string>
     <string name="mode_sequence_desc">Varios movimientos para hacer en orden.</string>
     <string name="mode_challenge_info">Aproximadamente 1 de cada 3 turnos es un reto sorpresa.</string>
+    <string name="settings_challenge_frequency">Frecuencia de retos</string>
+    <string name="challenge_freq_frequent">Frecuente</string>
+    <string name="challenge_freq_infrequent">Poco frecuente</string>
+    <string name="challenge_freq_rare">Raro</string>
+    <string name="mode_challenge_info_frequent">Aproximadamente 1 de cada 2 turnos es un reto sorpresa.</string>
+    <string name="mode_challenge_info_infrequent">Aproximadamente 1 de cada 3 turnos es un reto sorpresa.</string>
+    <string name="mode_challenge_info_rare">Aproximadamente 1 de cada 10 turnos es un reto sorpresa.</string>
     <string name="mode_sequence_length">Movimientos por turno</string>
     <string name="challenge_label">Reto</string>
     <string name="verb_lift">Levanta</string>
